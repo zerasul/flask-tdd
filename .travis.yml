@@ -5,5 +5,3 @@ install:
   pip install -r requeriments.txt
 script:
   python -m unittest discover test/
-after_success:
-  coveralls
