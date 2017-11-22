@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head><title>Test Flask</title></head>
+    <body>
+        <h1> Bienvenidos a Flask</h1>
+        <form method="POST" action="/">
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+            <input type="submit" value="Enviar">
+            {% if url %}
+                <h2>{{ url }}</h2>
+            {% endif%}
+        </form>
+    </body>
+</html>
