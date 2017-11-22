@@ -1,0 +1,7 @@
+languaje: python
+python: 
+  - "3.6"
+install:
+  pip install -r requeriments.txt
+script:
+  python -m unittest discover test/
