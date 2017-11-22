@@ -4,7 +4,6 @@ python:
 install:
   pip install -r requeriments.txt
 script:
-  python -m unittest discover test/;
-  coverage run server.py;
+  coverage run --source=test -m unittest discover
 after_success:
   coveralls
